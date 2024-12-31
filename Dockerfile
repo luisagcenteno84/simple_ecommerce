@@ -1,11 +1,6 @@
 FROM python:3.10-slim
 
 
-COPY . /src
-
-WORKDIR /src
-
-
 RUN pip install -r requirements.txt
 
 ENV SECRET_KEY=123
