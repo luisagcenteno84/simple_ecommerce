@@ -15,6 +15,9 @@ ENV STRIPE_TEST_SECRET_KEY=123
 
 #RUN python manage.py migrate
 
+RUN ["python", "manage.py", "migrate"]
+RUN ["python", "manage.py", "migrate", "--run-syncdb"]
+
 EXPOSE 8000
 
 
