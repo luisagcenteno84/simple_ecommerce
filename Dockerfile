@@ -9,7 +9,7 @@ ENV SECRET_KEY=123
 ENV STRIPE_TEST_PUBLIC_KEY=123
 ENV STRIPE_TEST_SECRET_KEY=123
 
-ENTRYPOINT ["python","manage.py","migrate","djecommerce"]
+ENTRYPOINT ["python","manage.py","migrate","core"]
 
 
 EXPOSE 8000
