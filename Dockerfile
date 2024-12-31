@@ -1,10 +1,10 @@
 FROM python:3.10-slim
 
-COPY . /
+#COPY . /
 
-#COPY . /src
+COPY . /src
 
-#WORKDIR /src
+WORKDIR /src
 
 
 RUN pip install -r requirements.txt
