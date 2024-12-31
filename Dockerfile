@@ -12,7 +12,6 @@ RUN pip install -r requirements.txt
 ENV SECRET_KEY=123
 ENV STRIPE_TEST_PUBLIC_KEY=123
 ENV STRIPE_TEST_SECRET_KEY=123
-ENV PYTHONUNBUFFERED=1 
 
 #RUN python manage.py migrate
 
