@@ -1,5 +1,11 @@
 FROM python:3.10-slim
 
+COPY . /
+
+#COPY . /src
+
+#WORKDIR /src
+
 
 RUN pip install -r requirements.txt
 
