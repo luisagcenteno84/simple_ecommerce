@@ -64,20 +64,20 @@
               {% comment %} <img src="{{ item.image.url }}" class="card-img-top" {% endcomment %} <img
                 src="{{ item.image.url }}" class="card-img-top">
               <a href="{{ item.get_absolute_url }}"
-                onclick="dataLayer.push({'event': 'productClick','slug': {{item.slug}}});">
+                onclick="dataLayer.push({'event': 'Link Click','slug': {{item.slug}}});">
                 <div class="mask rgba-white-slight"></div>
               </a>
             </div>
 
             <div class="card-body text-center">
               <a href="{{ item.get_absolute_url }}" class="grey-text"
-                onclick="dataLayer.push({'event': 'productClick','slug': {{item.slug}}});"></a>
+                onclick="dataLayer.push({'event': 'Link Click','slug': {{item.slug}}});"></a>
               <h5>{{ item.get_category_display }}</h5>
               </a>
               <h5>
                 <strong>
                   <a href="{{ item.get_absolute_url }}" class="dark-grey-text"
-                    onclick="dataLayer.push({'event': 'productClick','slug': {{item.slug}}});">{{ item.title }}
+                    onclick="dataLayer.push({'event': 'Link Click','slug': {{item.slug}}});">{{ item.title }}
                     <span class="badge badge-pill {{ item.get_label_display }}-color">NEW</span>
                   </a>
                 </strong>
